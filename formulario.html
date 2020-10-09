@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso Completo do Desenvolvedor Web</title>
+        <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form action="form.php"> <!--ex de action, redireciona pra um arquivo do back-->
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required autofocus tabindex="1" disabled>
+            </div>                                              <!-- Com tab index pode alterar a ordem de foco dos campos quando se aperta tab-->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com" required readonly> 
+            </div>
+            <div class="form-group">
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="form-control" required min="2020-01-01", max="2020-10-09">
+            </div>
+            <div class="form-group">
+                <label >Sexo</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="form-group">
+                <label for="li">Li o Contrato</label>
+                <input type="checkbox" name="li" id="li" required checked>
+            </div>
+            <div class="form-group">
+                <label for="volume">Volume</label>
+                <input type="range" name="volume" id="volume" min="0" max="100" value="30">
+            </div>
+            <div class="form-group">
+                <label for="meter">Bateria</label>
+                <meter min="0" max="100" low="20" value="19">19</meter>
+            </div>
+            <div class="form-group">
+                <label for="meter">Carregando</label>
+                <progress min="0" max="100" value="60">60%</progress>
+            </div>
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <input type="number" name="ano" id="ano" class="form-control" min="2016" max="2020" value="2018" step="2" required> <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" class="form-control" > <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" class="form-control" > <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="busca">Busca</label>
+                <input type="search" name="busca" id="busca" class="form-control" > <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" class="form-control" cols="30" rows="10"></textarea> <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="estados">Estados</label>
+                <select name="estados" id="estados">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG" selected>Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select> <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="estados">Estados</label>
+                <select name="estados" id="estados">
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select> <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+
+            <input type="hidden" name="id" value="1">
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" class="form-control" > <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div class="form-group">
+                <label for="mes">Mês</label>
+                <input type="month" name="mes" id="mes" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="week">Semana</label>
+                <input type="week" name="week" id="week" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora</label>
+                <input type="time" name="time" id="time" class="form-control" required >
+            </div>
+            <div class="form-group">
+                <input type="text" list="navegadores">
+                <datalist id="navegadores">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">    
+                </datalist> <!--step é a quantidade que a setinha vai encrementar 1 em  1 2 em 2 etc-->
+            </div>
+            <div>
+                <button class="btn btn-danger" type="submit">Cadastrar</button>
+            </div>
+        </form>
+
+        <script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
